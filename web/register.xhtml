@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Register Here</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"></link>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <div class="container">
+            <h2> <p class="text-primary">Register Here</p> </h2>
+            <h3> <p class="text-info">If you are an existing user. Login, by clicking 'Login' button at bottom of the screen.</p> </h3>
+            <h4> <p class="text-primary">Register Form will not be submitted till you fill all the below fields.</p> </h4>
+        </div>
+    </h:head>
+
+    <h:body>
+        <br></br>
+
+        <h:form>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR FIRST NAME: </p>
+            </div>
+            <center> <h:inputText required="true" requiredMessage="First Name is Mandatory Field" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR LAST NAME: </p>
+            </div>
+            <center> <h:inputText required="true" requiredMessage="Last Name is Mandatory Field" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR ADDRESS: </p>
+            </div>
+            <center> <h:inputText required="true" requiredMessage="Address is Mandatory Field" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR Mobile Number (10 Digit): </p>
+            </div>
+            <center> <input type="text" required="true" requiredMessage="Mobile Number is Mandatory Field" pattern="(1|2|3|4|5|6|7|8|9)\d{9}" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR EMAIL (Format: format@format.com): </p>
+            </div>
+            <center> <input type="email" required="true" requiredMessage="Email is Mandatory Field" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR USER NAME: </p>
+            </div>
+            <center> <h:inputText required="true" requiredMessage="User Name is Mandatory Field" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <p class="bg-info">PLEASE ENTER YOUR PASSWORD (8 or more characters): </p>
+            </div>
+            <center> <input type="password" required="true" requiredMessage="Password is Mandatory Fields" pattern=".{8,}" /> </center>
+
+            <br></br>
+
+            <div class="container">
+                <div class="form-group"> 
+                <div class="col-sm-offset-2 col-sm-10">
+                    <b1> <p class="text-danger"> Check all the details once again before clicking here.</p> </b1>
+                    <h:commandButton class="btn btn-info" value="Register" action="rcorrect" /> 
+                </div>
+            </div>
+            </div>
+
+            <br></br>
+            <br></br>
+
+        </h:form>
+
+        <h:form>
+
+            <div class="form-group"> 
+                <div class="col-sm-offset-2 col-sm-10">
+                    <b1>Existing User? Please Login Here.</b1>
+                    <a href="index.xhtml" class="btn btn-info" role="button">Login</a>
+                </div>
+            </div>
+
+        </h:form>
+
+    </h:body>
+
+</html>
