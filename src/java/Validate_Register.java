@@ -5,6 +5,12 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean
 @SessionScoped
 
+
+
+//NO NEED FOR THIS ASSIGNMENT 
+
+
+
 public class Validate_Register {
 
     private String firstname;
